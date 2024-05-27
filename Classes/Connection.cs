@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
+using System.Windows;
 
 namespace pr42savichev.Classes
 {
     public class Connection
     {
-        private static readonly string config = "server=student.permaviat.ru;Trusted_Connection=No;DataBase=***;User=***;pwd=***";
+        private static readonly string config = "server=SANCHES\\SQLEXPRESS;Trusted_Connection=No;DataBase=Shop42;User=sa;pwd=sa";
 
         public static SqlConnection OpenConnection()
         {

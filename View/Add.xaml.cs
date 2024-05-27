@@ -18,9 +18,14 @@ namespace pr42savichev.View
     /// </summary>
     public partial class Add : Page
     {
-        public Add()
+        public Add(object Context)
         {
             InitializeComponent();
+            DataContext = new
+            {
+                item = Context,
+                categorys = new ViewModell.VMCategorys()
+            };
         }
     }
 }
